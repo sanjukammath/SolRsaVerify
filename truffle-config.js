@@ -1,4 +1,12 @@
+const Web3 = require('Web3');
+
 module.exports = {
-  // See <http://truffleframework.com/docs/advanced/configuration>
-  // to customize your Truffle configuration!
+  networks: {
+    development: {
+      provider: function() {
+        return new Web3.providers.WebsocketProvider('ws://localhost:7545');
+      },
+      network_id: '5777'
+    }
+  }
 };

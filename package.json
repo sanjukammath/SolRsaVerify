@@ -6,7 +6,9 @@
     "test": "test"
   },
   "dependencies": {
-    "truffle": "^5.0.0"
+    "node-rsa": "^1.0.6",
+    "truffle": "^5.0.0",
+    "web3": "^1.2.1"
   },
   "scripts": {
     "test": "truffle test"
